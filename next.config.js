@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: "/:slug",
-        destination: "https://vbonews.com/:slug",
+        destination: "https://sportsandtravelonline.com/:slug",
         permanent: true,
         has: [
           {
@@ -15,7 +15,7 @@ module.exports = {
       },
       {
         source: "/doc-bao/:slug",
-        destination: "https://vbonews.com/doc-bao/:slug",
+        destination: "https://sportsandtravelonline.com/doc-bao/:slug",
         permanent: true,
         has: [
           {

@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
   const id = slug.slice(slug.lastIndexOf("-") + 1);
   const { data: article } = await fetch(
-    "https://api.vbonews.com/News/news-detail?id=" + id
+    "https://api.sportsandtravelonline.com/News/news-detail?id=" + id
   ).then((res) => res.json());
 
   return {
@@ -30,7 +30,7 @@ async function getData(slug: string) {
     console.log("slug", slug, id);
 
     const { data: article } = await fetch(
-      "https://api.vbonews.com/News/news-detail?id=" + id
+      "https://api.sportsandtravelonline.com/News/news-detail?id=" + id
     ).then((res) => res.json());
     return article;
   } catch (error) {
